@@ -1,0 +1,12 @@
+package br.edu.ifms.detran.model;
+
+import java.io.Serializable;
+
+public class Carro implements Serializable{
+	private Long id;
+	private String nome;
+	private String marca;
+	private int modelo;
+	private String placa;
+
+}

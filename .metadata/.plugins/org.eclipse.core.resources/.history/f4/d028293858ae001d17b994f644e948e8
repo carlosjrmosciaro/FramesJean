@@ -1,0 +1,14 @@
+package br.edu.ifms.detran.model;
+
+import java.io.Serializable;
+
+public class Infracao implements Serializable{
+	
+	private Long id;
+	private String descricao;
+	private int pontos;
+	private float valor;
+	
+	
+
+}

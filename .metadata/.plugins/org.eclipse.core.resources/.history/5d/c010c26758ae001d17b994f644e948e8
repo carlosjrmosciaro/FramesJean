@@ -1,0 +1,38 @@
+package br.edu.ifms.detran.model;
+
+import java.io.Serializable;
+import java.util.Objects;
+
+public class Infracao implements Serializable{
+	
+	private Long id;
+	private String descricao;
+	private int pontos;
+	private float valor;
+	
+	public Infracao() {
+			
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(descricao, id, pontos, valor);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Infracao other = (Infracao) obj;
+		return Objects.equals(descricao, other.descricao) && Objects.equals(id, other.id) && pontos == other.pontos
+				&& Float.floatToIntBits(valor) == Float.floatToIntBits(other.valor);
+	}
+	
+	
+
+
+}

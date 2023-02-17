@@ -1,0 +1,22 @@
+package br.edu.ifms.detran.model;
+
+import java.io.Serializable;
+
+public class Carro implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Long id;
+	private String nome;
+	private String marca;
+	private int modelo;
+	private String placa;
+	
+	public Carro() {
+		
+	}
+	
+	
+
+}
